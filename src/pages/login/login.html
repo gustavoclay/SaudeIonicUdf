@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <div style="margin-left:-10px;width:calc(100% + 20px);">
+    <img src="assets/img/sFYP5yvTTmanwvJAdTCy_home.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+  </div>
+  <form id="login-form1">
+    <ion-item id="login-input1">
+      <ion-label floating></ion-label>
+      <ion-input type="email" placeholder="Username" name="usuario"></ion-input>
+    </ion-item>
+    <ion-item id="login-input2">
+      <ion-label floating></ion-label>
+      <ion-input type="password" placeholder="Password" name="senha"></ion-input>
+    </ion-item>
+  </form>
+  <button id="login-button1" ion-button color="assertive" block style="font-size:25px;border-radius:10px 10px 10px 10px;" on-click="goToWelcome()">
+    Login
+  </button>
+  <button id="login-button9" ion-button clear color="assertive" block style="border-radius:100px 100px 100px 100px;" on-click="goToSignIn()">
+    Sign In
+  </button>
+</ion-content>
