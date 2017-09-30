@@ -4,7 +4,6 @@ import { LoginPage } from '../login/login';
 import { WelcomePage } from '../welcome/welcome';
 import { HomePage } from '../home/home';
 import { IMCPage } from '../i-mc/i-mc';
-import { SignInPage } from '../sign-in/sign-in';
 
 @Component({
   selector: 'page-sign-in',
