@@ -11,14 +11,12 @@ import { LoginPage } from '../pages/login/login';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePageModule } from '../pages/home/home.module';
-import { WelcomePageModule } from '../pages/welcome/welcome.module';
 import { SignInPageModule } from '../pages/sign-in/sign-in.module';
 import { LoginPageModule } from '../pages/login/login.module';
 import { InicioPageModule } from '../pages/inicio/inicio.module';
@@ -29,7 +27,7 @@ import { IMcPageModule } from '../pages/i-mc/i-mc.module';
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
+    WelcomePage,
   ],
   imports: [
     BrowserModule,
@@ -40,14 +38,12 @@ import { IMcPageModule } from '../pages/i-mc/i-mc.module';
     InicioPageModule,
     LoginPageModule,
     SignInPageModule,
-    WelcomePageModule,
     HomePageModule
 
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage,
     IMcPage,
     DietaPage,
     SobreNsPage,

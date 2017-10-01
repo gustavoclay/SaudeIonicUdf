@@ -1,25 +1,14 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
-/**
- * Generated class for the DietaPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-dieta',
-  templateUrl: 'dieta.html',
+  templateUrl: 'dieta.html'
 })
 export class DietaPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  // this tells the tabs component which Pages
+  // should be each tab's root Page
+  constructor(public navCtrl: NavController) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DietaPage');
-  }
-
+  
 }

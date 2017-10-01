@@ -1,18 +1,30 @@
-<!--
-  Generated template for the WelcomePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>welcome</ion-title>
+    <ion-title>
+      SaúdeIonicUdf
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
+<ion-content>
+  <ion-slides pager>
 
+    <ion-slide class="slide_images">
+      <img src="/assets/img/LoginLogo.png" alt="">
+      <h1>Bem Vindo</h1>
+      <p>Esse aplicativo foi desenvolvido para auxiliar você em diversos aspectos da sua saúde.</p>
+    </ion-slide>
 
-<ion-content padding>
+    <ion-slide class="slide_images">
+      <img src="/assets/img/LoginLogo.png" alt="">
+      <p>Aqui você encontrará dicas de treino, dicas de alimentação relacionadas a dieta, e poderá melhorar seu desempenho, acompanhando seus resultados pelo nosso teste de IMC (Índice de Massa Corporal).</p>
+    </ion-slide>
 
+    <ion-slide class="slide_images">
+      <img src="/assets/img/LoginLogo.png" alt="">
+      <div><a (click)="goToLoginPage()">
+        continuar
+      </a></div>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>
