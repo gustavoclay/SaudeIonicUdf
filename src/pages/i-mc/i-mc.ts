@@ -1,14 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the IMcPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-i-mc',
-  templateUrl: 'i-mc.html'
+  templateUrl: 'i-mc.html',
 })
-export class IMCPage {
-  // this tells the tabs component which Pages
-  // should be each tab's root Page
-  constructor(public navCtrl: NavController) {
+export class IMcPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad IMcPage');
+  }
+
 }

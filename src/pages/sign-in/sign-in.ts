@@ -1,33 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
-import { WelcomePage } from '../welcome/welcome';
-import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the SignInPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-sign-in',
-  templateUrl: 'sign-in.html'
+  templateUrl: 'sign-in.html',
 })
 export class SignInPage {
-  // this tells the tabs component which Pages
-  // should be each tab's root Page
-  constructor(public navCtrl: NavController) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goToLogin(params){
-    if (!params) params = {};
-    this.navCtrl.push(LoginPage);
-  }goToWelcome(params){
-    if (!params) params = {};
-    this.navCtrl.push(WelcomePage);
-  }goToHome(params){
-    if (!params) params = {};
-    this.navCtrl.push(HomePage);
-  }goToIMC(params){
-    if (!params) params = {};
-    this.navCtrl.push(IMCPage);
-  }goToSignIn(params){
-    if (!params) params = {};
-    this.navCtrl.push(SignInPage);
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SignInPage');
   }
+
 }

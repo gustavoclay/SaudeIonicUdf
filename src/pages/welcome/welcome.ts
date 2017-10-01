@@ -1,22 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the WelcomePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-welcome',
-  templateUrl: 'welcome.html'
+  templateUrl: 'welcome.html',
 })
 export class WelcomePage {
-  // this tells the tabs component which Pages
-  // should be each tab's root Page
-  constructor(public navCtrl: NavController) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goToHome(params){
-    if (!params) params = {};
-    this.navCtrl.push(HomePage);
-  }goToIMC(params){
-    if (!params) params = {};
-    this.navCtrl.push(IMCPage);
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad WelcomePage');
   }
+
 }

@@ -1,22 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
-import { DietaPage } from '../dieta/dieta';
-import { SobreNSPage } from '../sobre-ns/sobre-ns';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the InicioPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-inicio',
-  templateUrl: 'inicio.html'
+  templateUrl: 'inicio.html',
 })
 export class InicioPage {
-  // this tells the tabs component which Pages
-  // should be each tab's root Page
-  tab1Root: any = HomePage;
-  tab2Root: any = IMCPage;
-  tab3Root: any = DietaPage;
-  tab4Root: any = SobreNSPage;
-  constructor(public navCtrl: NavController) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad InicioPage');
+  }
+
 }
