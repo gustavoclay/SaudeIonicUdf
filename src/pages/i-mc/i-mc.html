@@ -1,35 +1,37 @@
-<ion-header>
-  <ion-navbar>
+<ion-header class="imc-header">
+  <ion-navbar color="autent">
     <ion-title>
       IMC
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page2">
+<ion-content padding id="page2" class="imc-content">
   <h3 id="iMC-heading2" style="color:#000000;font-weight:400;text-align:center;">
     Índice de massa corporal
   </h3>
   <div id="iMC-markdown6" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">Trata-se de uma medida do peso de cada pessoa, sendo uma relação entre a massa da pessoa e a sua altura.</p>
     <p style="color:#000000;">
       Informe o peso e altura para calcularmos o IMC
     </p>
   </div>
   <form id="iMC-form5">
     <ion-item id="iMC-input11">
-      <ion-label></ion-label>
-      <ion-input type="number" placeholder="Peso" name="pesoImc"></ion-input>
+      <ion-label stacked>Peso</ion-label>
+      <ion-input type="number" placeholder="" name="pesoImc"></ion-input>
     </ion-item>
     <ion-item id="iMC-input12">
-      <ion-label floating></ion-label>
-      <ion-input type="number" placeholder="Altura" name="alturaImc"></ion-input>
+      <ion-label stacked>Altura</ion-label>
+      <ion-input type="number" placeholder="" name="alturaImc"></ion-input>
     </ion-item>
   </form>
-  <button id="iMC-button5" ion-button color="assertive" block style="border-radius:10px 10px 10px 10px;">
+  <button id="iMC-button5" ion-button color="primary" full style="border-radius:15px 15px 15px 15px;">
     Calcular
   </button>
   <div id="iMC-markdown7" class="show-list-numbers-and-dots">
-    <p style="color:#000000;">
-      Lembre-se de fazer o cálculo periodicamente para um melhor acompanhamento do seu progresso
+      <ion-icon name="alert" item-right class="imc-icon"></ion-icon>
+    <p style="color:#000000;" class="icon ion-alert">
+        Lembre-se de fazer o cálculo periodicamente para um melhor acompanhamento do seu progresso
     </p>
   </div>
   <form id="iMC-form6">

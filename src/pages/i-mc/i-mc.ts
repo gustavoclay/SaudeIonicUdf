@@ -5,10 +5,10 @@ import { NavController } from 'ionic-angular';
   selector: 'page-i-mc',
   templateUrl: 'i-mc.html'
 })
-export class IMCPage {
+export class IMcPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
   }
-  
+
 }

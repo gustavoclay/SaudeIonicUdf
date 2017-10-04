@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { IMCPage } from '../i-mc/i-mc';
+import { IMcPage } from '../i-mc/i-mc';
 
 @Component({
   selector: 'page-home',
@@ -13,6 +13,6 @@ export class HomePage {
   }
   goToIMC(params){
     if (!params) params = {};
-    this.navCtrl.push(IMCPage);
+    this.navCtrl.push(IMcPage);
   }
 }

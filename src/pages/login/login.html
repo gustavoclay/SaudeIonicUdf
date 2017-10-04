@@ -1,28 +1,28 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="autent">
     <ion-title>
-      Login
+      Autenticação
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page5">
+<ion-content padding id="page5" class="login-class">
   <div style="margin-left:-10px;width:calc(100% + 20px);">
-    <img src="assets/img/sFYP5yvTTmanwvJAdTCy_home.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+    <img src="/assets/img/LoginLogo.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
   </div>
-  <form id="login-form1">
+  <form>
     <ion-item id="login-input1">
-      <ion-label floating></ion-label>
-      <ion-input type="email" placeholder="Username" name="usuario"></ion-input>
+      <ion-label floating>Usuário</ion-label>
+      <ion-input type="email" placeholder="" name="usuario"></ion-input>
     </ion-item>
     <ion-item id="login-input2">
-      <ion-label floating></ion-label>
-      <ion-input type="password" placeholder="Password" name="senha"></ion-input>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password" placeholder="" name="senha"></ion-input>
     </ion-item>
   </form>
-  <button id="login-button1" ion-button color="assertive" block style="font-size:25px;border-radius:10px 10px 10px 10px;" on-click="goToWelcome()">
+  <button id="login-button1" ion-button color="assertive" block style="font-size:25px;border-radius:10px 10px 10px 10px;" on-click="goToInicioPage()">
     Login
   </button>
   <button id="login-button9" ion-button clear color="assertive" block style="border-radius:100px 100px 100px 100px;" on-click="goToSignIn()">
-    Sign In
+    Cadastre-se
   </button>
 </ion-content>

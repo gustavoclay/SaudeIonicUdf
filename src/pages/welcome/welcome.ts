@@ -1,8 +1,8 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html'
@@ -10,13 +10,14 @@ import { IMCPage } from '../i-mc/i-mc';
 export class WelcomePage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goToHome(params){
-    if (!params) params = {};
-    this.navCtrl.push(HomePage);
-  }goToIMC(params){
-    if (!params) params = {};
-    this.navCtrl.push(IMCPage);
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad IntroPage');
+  }
+
+  goToLoginPage() {
+    this.navCtrl.push(LoginPage);
   }
 }

@@ -3,8 +3,7 @@ import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { WelcomePage } from '../welcome/welcome';
 import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
-import { SignInPage } from '../sign-in/sign-in';
+import { IMcPage } from '../i-mc/i-mc';
 
 @Component({
   selector: 'page-sign-in',
@@ -26,7 +25,7 @@ export class SignInPage {
     this.navCtrl.push(HomePage);
   }goToIMC(params){
     if (!params) params = {};
-    this.navCtrl.push(IMCPage);
+    this.navCtrl.push(IMcPage);
   }goToSignIn(params){
     if (!params) params = {};
     this.navCtrl.push(SignInPage);

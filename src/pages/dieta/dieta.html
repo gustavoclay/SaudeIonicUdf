@@ -1,26 +1,34 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="autent">
     <ion-title>
       Dieta
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page3">
+<ion-content padding class ="dieta-class">
   <ion-list id="dieta-list3">
     <ion-item color="dark" id="dieta-list-item6">
-      <ion-icon name="arrow-dropright" item-left></ion-icon>
+        <div><a (click)="goToCafeManhaPage()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+          </a></div> 
       Café da manhã
     </ion-item>
-    <ion-item color="none" id="dieta-list-item7">
-      <ion-icon name="arrow-dropright" item-left></ion-icon>
+    <ion-item color="dark" id="dieta-list-item6">
+        <div><a (click)="goToAlmocoPage()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+          </a></div> 
       Almoço
     </ion-item>
-    <ion-item color="none" id="dieta-list-item9">
-      <ion-icon name="arrow-dropright" item-left></ion-icon>
-      lanche
+    <ion-item color="dark" id="dieta-list-item6">
+        <div><a (click)="goToLanchePage()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+          </a></div> 
+      Lanche
     </ion-item>
-    <ion-item color="none" id="dieta-list-item8">
-      <ion-icon name="arrow-dropright" item-left></ion-icon>
+    <ion-item color="dark" id="dieta-list-item6">
+        <div><a (click)="goToJantaPage()">
+            <ion-icon name="arrow-dropright" item-left></ion-icon>
+          </a></div> 
       Janta
     </ion-item>
   </ion-list>

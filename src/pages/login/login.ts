@@ -1,10 +1,8 @@
+import { InicioPage } from './../inicio/inicio';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { WelcomePage } from '../welcome/welcome';
-import { HomePage } from '../home/home';
-import { IMCPage } from '../i-mc/i-mc';
 import { SignInPage } from '../sign-in/sign-in';
-import { LoginPage } from '../login/login';
+
 
 @Component({
   selector: 'page-login',
@@ -15,20 +13,12 @@ export class LoginPage {
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
   }
-  goToWelcome(params){
+  goToInicioPage(params){
     if (!params) params = {};
-    this.navCtrl.push(WelcomePage);
-  }goToHome(params){
-    if (!params) params = {};
-    this.navCtrl.push(HomePage);
-  }goToIMC(params){
-    if (!params) params = {};
-    this.navCtrl.push(IMCPage);
-  }goToSignIn(params){
+    this.navCtrl.push(InicioPage);
+  }
+  goToSignIn(params){
     if (!params) params = {};
     this.navCtrl.push(SignInPage);
-  }goToLogin(params){
-    if (!params) params = {};
-    this.navCtrl.push(LoginPage);
   }
 }
