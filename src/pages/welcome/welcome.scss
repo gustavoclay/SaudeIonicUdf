@@ -5,12 +5,20 @@ page-welcome {
 .slide_images {
   padding: 10%;
   background-color: #3498db;
+
 }
 
 .slide_images p {
+  color: white;
   font-weight: bold;
 }
 
 .slide_images h1 {
   font-weight: bold;
+  color: yellow;
+}
+
+
+.slide_images img{
+ border-radius: 30%;
 }

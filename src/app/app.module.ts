@@ -23,7 +23,6 @@ import { InicioPageModule } from '../pages/inicio/inicio.module';
 import { SobreNsPageModule } from '../pages/sobre-ns/sobre-ns.module';
 import { DietaPageModule } from '../pages/dieta/dieta.module';
 import { IMcPageModule } from '../pages/i-mc/i-mc.module';
-<<<<<<< HEAD
 import { DietaCafeManhaPageModule } from '../pages/dieta-cafe-manha/dieta-cafe-manha.module';
 import { DietaAlmocoPageModule } from '../pages/dieta-almoco/dieta-almoco.module';
 import { DietaLanchePageModule } from '../pages/dieta-lanche/dieta-lanche.module';
@@ -32,8 +31,6 @@ import { DietaLanchePage } from '../pages/dieta-lanche/dieta-lanche';
 import { DietaAlmocoPage } from '../pages/dieta-almoco/dieta-almoco';
 import { DietaCafeManhaPage } from '../pages/dieta-cafe-manha/dieta-cafe-manha';
 import { DietaJantaPage } from '../pages/dieta-janta/dieta-janta';
-=======
->>>>>>> 40a6ba76d93952b2be90b2caf103ce2e6d0d4680
 
 @NgModule({
   declarations: [
